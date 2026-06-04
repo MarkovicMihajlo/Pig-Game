@@ -42,8 +42,6 @@ main {
   align-items: center;
   transition: all 0.75s;
 }
-
-
 .name {
   position: relative;
   font-size: 4rem;
@@ -70,7 +68,6 @@ main {
 .player--active .score {
   font-weight: 400;
 }
-
 .player--active .current {
   opacity: 1;
 }
@@ -85,14 +82,12 @@ main {
   text-align: center;
   transition: all 0.75s;
 }
-
 .current-label {
   text-transform: uppercase;
   margin-bottom: 1rem;
   font-size: 1.7rem;
   color: #ddd;
 }
-
 .current-score {
   font-size: 3.5rem;
 }
@@ -135,12 +130,10 @@ main {
 .btn--hold {
   top: 46.1rem;
 }
-
 .btn:active {
   transform: translate(-50%, 3px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
 }
-
 .btn:focus {
   outline: none;
 }
@@ -157,7 +150,6 @@ main {
 .player--winner {
   background-color: #2f2f2f;
 }
-
 .player--winner .name {
   font-weight: 700;
   color: #c7365f;

@@ -1,5 +1,7 @@
 'use strict';
 
+//DOM MANIPULATION
+
 const player0El = document.querySelector('.player--0');
 
 const player1El = document.querySelector('.player--1');
@@ -56,11 +58,16 @@ const init = function(){
 
 }
 
+//SET DEFAULT PARAMETERS
+
 init();
+
 
 //CHANGING PLAYER
 
 const switchPlayer = function(){
+
+    //PLAYER 1 START FIRST
 
     document.getElementById(`current--${activePlayer}`).textContent = 0;
     
@@ -88,6 +95,8 @@ btnRoll.addEventListener('click', function(){
         
         if(dice !== 1){
 
+            //UPDATE CURRENT SCORE
+            
             currentScore += dice;
             
             document.getElementById(`current--${activePlayer}`).textContent = currentScore;
@@ -129,5 +138,8 @@ btnHold.addEventListener('click', function(){
     }
 
 });
+
+
+//RESTARTING GAME
 
 btnNew.addEventListener('click', init);

@@ -20,7 +20,11 @@ const btnRoll = document.querySelector('.btn--roll');
 
 const btnHold = document.querySelector('.btn--hold');
 
+//DEFINING VARIABLES 
+
 let scores, currentScore, activePlayer, playing;
+
+//RESTART AND SET DEFAULT VALUE
 
 const init = function(){
 
@@ -54,6 +58,8 @@ const init = function(){
 
 init();
 
+//CHANGING PLAYER
+
 const switchPlayer = function(){
 
     document.getElementById(`current--${activePlayer}`).textContent = 0;
@@ -67,6 +73,8 @@ const switchPlayer = function(){
     player1El.classList.toggle('player--active');
 
 }
+
+//DICE ROLL
 
 btnRoll.addEventListener('click', function(){
 
@@ -92,6 +100,8 @@ btnRoll.addEventListener('click', function(){
     }
 
 });
+
+//CHANGING CURRENT SCORE
 
 btnHold.addEventListener('click', function(){
 
